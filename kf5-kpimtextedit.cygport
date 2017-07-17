@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kpimtextedit"
-VERSION=16.08.3
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE rich text composer library"
@@ -9,8 +9,10 @@ DESCRIPTION="Advanced KDE text editor library which provide advanced html featur
 
 PKG_NAMES="libKF5PimTextEdit5 libKF5PimTextEdit-devel"
 libKF5PimTextEdit5_CONTENTS="
+	etc/xdg/kpimtextedit.*categories
 	usr/bin/cygKF5PimTextEdit-5.dll
 	usr/share/doc/${NAME}
+	usr/share/locale/*/LC_MESSAGES/libkpimtextedit.mo
 "
 libKF5PimTextEdit_devel_REQUIRES="libQt5Core-devel libQt5Gui-devel"
 libKF5PimTextEdit_devel_CONTENTS="
